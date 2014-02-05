@@ -157,5 +157,10 @@ namespace WindowsFormsApplication2
         {
             textBox1.Text = " ";
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

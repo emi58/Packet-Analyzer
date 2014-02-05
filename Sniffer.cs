@@ -164,6 +164,7 @@ namespace WindowsFormsApplication2
         private void button3_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
+            textBox1.Text = "";
             nr = 0;
             PacketData.Clear();
 

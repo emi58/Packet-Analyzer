@@ -153,9 +153,9 @@ namespace WindowsFormsApplication2
                 bc.ReportProgress(0, PacketData);
                 Thread.Sleep(60);
             }
-            catch
+            catch(Exception e)
             {
-                MessageBox.Show("Error \r\nTry another interface");
+                MessageBox.Show(e.Message+ "\nError \r\nTry another interface");
                 bc.CancelAsync();
                 But.Invoke((MethodInvoker)(() => But.Text ="Start")); 
                 return;
